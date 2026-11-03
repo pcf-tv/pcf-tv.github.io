@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>School Bot</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --link: #0969da; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --link: #4493f8; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px; }
+  h1 { margin-top: 0; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); font-size: 14px; }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+  <h1>School Bot</h1>
+  <p>School Bot is a private tool used by a single household. It is not offered
+     to the public and has no sign-up.</p>
+  <p>It runs entirely on the household's own computer and does three things:</p>
+  <ol>
+    <li>Reads school-related emails from the household's own Gmail account
+        (read-only access; it cannot send, delete, or change email).</li>
+    <li>Uses an AI model that runs locally on that computer to find school events
+        and deadlines. No email content is sent to any outside AI service.</li>
+    <li>After a parent approves the list, adds reminders to a "School Reminders"
+        Google Calendar that the tool created, so the family's phones get a
+        reminder the evening before.</li>
+  </ol>
+  <p><a href="privacy.html">Privacy policy</a></p>
+  <p class="muted">Last updated: 2 November 2026</p>
+</main>
+</body>
+</html>
